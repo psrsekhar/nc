@@ -1,0 +1,23 @@
+Fleet Name: pure-fleet-ngd-prod
+
+Preset Name: pure-preset-prc-prod-std
+
+Desc: "Pricing prod with 4 vol sql on FA//X, safemode, 4h snaps, ngd-ta rep"
+
+Storage Resource: pure-vol-prc-data-01 ---- pure-vol-prc-log-01  -----   pure-vol-prc-tmp-01  -----  pure-vol-prc-sys-01
+
+Configuration name: pure-snap-prc-prod-config
+
+Snapshot: pure-snap-prc-prod-4h
+
+Configuration name: pure-rep-prc-prod-config
+
+Replication: pure-rep-ta-prod
+
+Workload: pure-wl-adm-prc-ngd-prod-01
+
+Volume group: pure-vg-ngd-prc-prod
+
+Host group: pure-hg-ngd-prc-prod
+
+Protection group: pure-pg-ngd-prc-prod
